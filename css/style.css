@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Futura:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Century+Expanded:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #022859;
+    --secondary-color: #F23005;
+    --accent-color: #F26D3D;
+    --header-background-color: #023859;
+    --text-color: #023859;
+    --background-shade: #e0e0f0;
+    --background-color: white;
+}
+
+body {
+    font-family: 'Futura', sans-serif;
+    color: var(--primary-color);
+    background-color: var(--background-shade);
+    /* filter: grayscale(1); */
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    background-color: var(--header-background-color);
+    color: #ffffff;
+    padding: 2rem 0 1rem 4rem;
+    box-shadow: 5px 5px 5px var(--secondary-color);
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.header-description {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+section {
+    background-color: var(--background-color);
+    margin: 1em;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+section h1 {
+    padding: 1rem 1em;
+    margin-top: 2rem;
+    font-size: 2rem;
+    background-color: var(--header-background-color);
+    color: var(--background-shade);
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.experience-item-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.experience-item-duration {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.experience-item {
+    margin-top: 0.5rem;
+    padding: 2rem;
+    color: var(--primary-color);
+    
+}
+
+.experience-item-company {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.experience-item-company:hover {
+    color: var(--accent-color);
+}
+
+.experience-item .experience-item-description li {
+    font-family: 'Century Expanded';
+    margin-left: 2em;
+}
+
+.contact-items {
+    display: flex;
+}
+
+.contact-type {
+    color: var(--secondary-color);
+    width: 100%
+
+}
+
+.contact-item {
+    width: 30%;
+    margin: 2rem;
+    padding: 2rem;
+    border: solid 0.1rem var(--background-shade);
+}
+
+.skills table {
+    padding: 2em;
+}
+
+.skills table td {
+    font-family: 'Century Expanded';
+}
+
+.skills table td:first-child {
+    color: var(--secondary-color);
+    padding: 0em 2em;
+    font-family: 'Futura';
+}
+
+.education-item {
+    padding: 2em;
+}
+
+.education-degree {
+    font-size: 18pt;
+}
+
+.education-school {
+    font-family: 'Century Expanded';
+    color: var(--secondary-color);
+}
