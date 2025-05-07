@@ -98,19 +98,21 @@ section h1 {
 
 .contact-items {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .contact-type {
     color: var(--secondary-color);
     width: 100%
-
 }
 
 .contact-item {
-    width: 30%;
     margin: 2rem;
     padding: 2rem;
     border: solid 0.1rem var(--background-shade);
+    flex-basis: auto;
+    min-width: 25%;
 }
 
 .skills table {
@@ -138,4 +140,17 @@ section h1 {
 .education-school {
     font-family: 'Century Expanded';
     color: var(--secondary-color);
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 100%;
+    }
+    .contact-items {
+        flex-direction: column;
+    }
+    
+    .header {
+        padding: 1rem 0 0.5rem 2rem;
+    }
 }
